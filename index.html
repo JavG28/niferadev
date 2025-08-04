@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nifera SRL - Soluciones Tecnológicas Integrales</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f8fafc',
+                        secondary: '#1e293b',
+                        accent: '#d97706',
+                        purple: '#8b5cf6',
+                        teal: '#14b8a6'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-primary text-secondary">
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nifera-Mq2zvx4sPY97q9JJ1gYbmKmsXsEKnG.png" alt="Nifera SRL Logo" class="h-10 w-10">
+                    <span class="ml-3 text-xl font-bold text-secondary">Nifera SRL</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#inicio" class="text-secondary hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Inicio</a>
+                        <a href="#servicios" class="text-secondary hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Servicios</a>
+                        <a href="#nosotros" class="text-secondary hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Nosotros</a>
+                        <a href="#testimonios" class="text-secondary hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Testimonios</a>
+                        <a href="#contacto" class="text-secondary hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Contacto</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-secondary hover:text-accent">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#inicio" class="text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Inicio</a>
+                <a href="#servicios" class="text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Servicios</a>
+                <a href="#nosotros" class="text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Nosotros</a>
+                <a href="#testimonios" class="text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Testimonios</a>
+                <a href="#contacto" class="text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-16 bg-gradient-to-br from-purple/10 to-teal/10 min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <div class="mb-8">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nifera-Mq2zvx4sPY97q9JJ1gYbmKmsXsEKnG.png" alt="Nifera SRL Logo" class="h-20 w-20 mx-auto mb-6">
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold text-secondary mb-6">
+                    Transformamos tu <span class="text-accent">Visión Digital</span> en Realidad
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Soluciones tecnológicas integrales que impulsan tu negocio hacia el éxito. Desde desarrollo web hasta soporte técnico especializado.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#servicios" class="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
+                        Conoce Nuestros Servicios
+                    </a>
+                    <a href="#contacto" class="border-2 border-accent text-accent hover:bg-accent hover:text-white px-8 py-4 rounded-lg font-semibold transition-all">
+                        Contáctanos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Nuestros Servicios</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Ofrecemos soluciones completas para todas tus necesidades tecnológicas y empresariales</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gradient-to-br from-purple/5 to-purple/10 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="text-purple text-4xl mb-4">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Redes Sociales & Video</h3>
+                    <p class="text-gray-600 mb-4">Gestión profesional de redes sociales y edición de video de alta calidad para potenciar tu presencia digital.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Gestión de contenido</li>
+                        <li>• Edición profesional</li>
+                        <li>• Estrategias digitales</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gradient-to-br from-teal/5 to-teal/10 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="text-teal text-4xl mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Soporte Técnico</h3>
+                    <p class="text-gray-600 mb-4">Servicios completos de tecnología, desde instalación de servidores hasta reparación de equipos.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Instalación de servidores</li>
+                        <li>• Reparación de PCs</li>
+                        <li>• Consultoría IT</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gradient-to-br from-accent/5 to-accent/10 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Desarrollo Web</h3>
+                    <p class="text-gray-600 mb-4">Desarrollo full stack de páginas web modernas, responsivas y optimizadas para tu negocio.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Sitios web responsivos</li>
+                        <li>• Aplicaciones web</li>
+                        <li>• E-commerce</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-gradient-to-br from-secondary/5 to-secondary/10 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="text-secondary text-4xl mb-4">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Contabilidad</h3>
+                    <p class="text-gray-600 mb-4">Servicios contables profesionales y gestión de impuestos para mantener tu negocio en orden.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Contabilidad general</li>
+                        <li>• Gestión de impuestos</li>
+                        <li>• Asesoría fiscal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">Sobre Nifera SRL</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Con sede en República Dominicana, somos una empresa consolidada con más de 6 años de experiencia en el mercado, brindando soluciones tecnológicas integrales a empresas de todos los tamaños.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Nuestro compromiso es ofrecer servicios de calidad que impulsen el crecimiento y la transformación digital de nuestros clientes, combinando experiencia, innovación y un enfoque personalizado.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-accent mb-2">6+</div>
+                            <div class="text-gray-600">Años de Experiencia</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-accent mb-2">100+</div>
+                            <div class="text-gray-600">Proyectos Completados</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-purple/20 to-teal/20 rounded-2xl p-8 text-center">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nifera-Mq2zvx4sPY97q9JJ1gYbmKmsXsEKnG.png" alt="Nifera SRL" class="h-32 w-32 mx-auto mb-6">
+                        <h3 class="text-2xl font-bold text-secondary mb-4">Nuestra Misión</h3>
+                        <p class="text-gray-600">
+                            Transformar ideas en soluciones tecnológicas efectivas que generen valor real para nuestros clientes y contribuyan al crecimiento de sus negocios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Lo Que Dicen Nuestros Clientes</h2>
+                <p class="text-xl text-gray-600">La satisfacción de nuestros clientes es nuestra mejor carta de presentación</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gradient-to-br from-purple/5 to-purple/10 p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Nifera SRL transformó completamente nuestra presencia digital. Su equipo es profesional, creativo y siempre cumple con los plazos establecidos."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            MR
+                        </div>
+                        <div>
+                            <div class="font-semibold text-secondary">María Rodríguez</div>
+                            <div class="text-sm text-gray-500">CEO, Empresa Retail</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gradient-to-br from-teal/5 to-teal/10 p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "El soporte técnico de Nifera es excepcional. Resolvieron todos nuestros problemas de IT y ahora nuestros sistemas funcionan perfectamente."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-teal rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            CL
+                        </div>
+                        <div>
+                            <div class="font-semibold text-secondary">Carlos López</div>
+                            <div class="text-sm text-gray-500">Director, Consultora</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gradient-to-br from-accent/5 to-accent/10 p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Gracias a Nifera, nuestra contabilidad está perfectamente organizada y cumplimos con todas nuestras obligaciones fiscales sin problemas."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-purple rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            AS
+                        </div>
+                        <div>
+                            <div class="font-semibold text-secondary">Ana Santana</div>
+                            <div class="text-sm text-gray-500">Gerente, PYME</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-gradient-to-br from-secondary to-secondary/90 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contáctanos</h2>
+                <p class="text-xl text-gray-300">Estamos listos para ayudarte a hacer crecer tu negocio</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-8">Información de Contacto</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="bg-accent p-3 rounded-lg mr-4">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Teléfono</div>
+                                <div class="text-gray-300">809-906-0344</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-accent p-3 rounded-lg mr-4">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Email</div>
+                                <div class="text-gray-300">info@niferadev.com</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-accent p-3 rounded-lg mr-4">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Ubicación</div>
+                                <div class="text-gray-300">República Dominicana</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media -->
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold mb-4">Síguenos en Redes Sociales</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-accent hover:bg-accent/80 p-3 rounded-lg transition-colors">
+                                <i class="fab fa-instagram text-white text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-accent hover:bg-accent/80 p-3 rounded-lg transition-colors">
+                                <i class="fab fa-whatsapp text-white text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-accent hover:bg-accent/80 p-3 rounded-lg transition-colors">
+                                <i class="fab fa-linkedin text-white text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-8">Envíanos un Mensaje</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2">Nombre Completo</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-white placeholder-gray-300" placeholder="Tu nombre completo">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-white placeholder-gray-300" placeholder="tu@email.com">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-sm font-medium mb-2">Servicio de Interés</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-white">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="redes-video">Redes Sociales & Video</option>
+                                <option value="soporte-tecnico">Soporte Técnico</option>
+                                <option value="desarrollo-web">Desarrollo Web</option>
+                                <option value="contabilidad">Contabilidad</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-white placeholder-gray-300" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-accent hover:bg-accent/90 text-white py-3 px-6 rounded-lg font-semibold transition-colors">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nifera-Mq2zvx4sPY97q9JJ1gYbmKmsXsEKnG.png" alt="Nifera SRL Logo" class="h-8 w-8 mr-3">
+                        <span class="text-xl font-bold">Nifera SRL</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Transformando ideas en soluciones tecnológicas efectivas desde República Dominicana.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-accent transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-accent transition-colors">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-accent transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#servicios" class="hover:text-accent transition-colors">Redes Sociales & Video</a></li>
+                        <li><a href="#servicios" class="hover:text-accent transition-colors">Soporte Técnico</a></li>
+                        <li><a href="#servicios" class="hover:text-accent transition-colors">Desarrollo Web</a></li>
+                        <li><a href="#servicios" class="hover:text-accent transition-colors">Contabilidad</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Suscríbete a las Últimas Noticias</h4>
+                    <p class="text-gray-300 mb-4">Mantente al día con nuestras novedades y consejos tecnológicos.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Tu email" class="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-accent text-white placeholder-gray-300">
+                        <button type="submit" class="bg-accent hover:bg-accent/90 px-6 py-2 rounded-r-lg transition-colors">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Nifera SRL. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+        });
+
+        // Newsletter subscription
+        document.querySelector('footer form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por suscribirte! Recibirás nuestras últimas noticias.');
+        });
+    </script>
+</body>
+</html>
