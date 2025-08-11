@@ -23,8 +23,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body class="bg-primary text-secondary">
-    <!-- Navigation -->
-    <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-50">
+     Navigation 
+    <nav class="bg-transparent fixed w-full z-50" data-mobile-menu-button>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
@@ -41,14 +41,14 @@
                     </div>
                 </div>
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-secondary hover:text-accent">
+                    <button class="text-secondary hover:text-accent">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
         </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+         Mobile menu 
+        <div class="md:hidden hidden bg-white border-t" data-mobile-menu>
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#inicio" class="text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Inicio</a>
                 <a href="#servicios" class="text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Servicios</a>
@@ -59,7 +59,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+     Hero Section 
     <section id="inicio" class="pt-16 bg-gradient-to-br from-purple/10 to-teal/10 min-h-screen flex items-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div class="text-center">
@@ -84,7 +84,7 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+     Services Section 
     <section id="servicios" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -93,7 +93,7 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Service 1 -->
+                 Service 1 
                 <div class="bg-gradient-to-br from-purple/5 to-purple/10 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
                     <div class="text-purple text-4xl mb-4">
                         <i class="fas fa-video"></i>
@@ -107,7 +107,7 @@
                     </ul>
                 </div>
 
-                <!-- Service 2 -->
+                 Service 2 
                 <div class="bg-gradient-to-br from-teal/5 to-teal/10 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
                     <div class="text-teal text-4xl mb-4">
                         <i class="fas fa-server"></i>
@@ -121,7 +121,7 @@
                     </ul>
                 </div>
 
-                <!-- Service 3 -->
+                 Service 3 
                 <div class="bg-gradient-to-br from-accent/5 to-accent/10 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
                     <div class="text-accent text-4xl mb-4">
                         <i class="fas fa-code"></i>
@@ -135,7 +135,7 @@
                     </ul>
                 </div>
 
-                <!-- Service 4 -->
+                 Service 4 
                 <div class="bg-gradient-to-br from-secondary/5 to-secondary/10 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
                     <div class="text-secondary text-4xl mb-4">
                         <i class="fas fa-calculator"></i>
@@ -152,7 +152,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+     About Section 
     <section id="nosotros" class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -188,7 +188,7 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+     Testimonials Section 
     <section id="testimonios" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -197,7 +197,7 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
+                 Testimonial 1 
                 <div class="bg-gradient-to-br from-purple/5 to-purple/10 p-8 rounded-xl shadow-lg">
                     <div class="flex items-center mb-4">
                         <div class="flex text-accent">
@@ -222,7 +222,7 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
+                 Testimonial 2 
                 <div class="bg-gradient-to-br from-teal/5 to-teal/10 p-8 rounded-xl shadow-lg">
                     <div class="flex items-center mb-4">
                         <div class="flex text-accent">
@@ -247,7 +247,7 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 3 -->
+                 Testimonial 3 
                 <div class="bg-gradient-to-br from-accent/5 to-accent/10 p-8 rounded-xl shadow-lg">
                     <div class="flex items-center mb-4">
                         <div class="flex text-accent">
@@ -275,7 +275,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+     Contact Section 
     <section id="contacto" class="py-20 bg-gradient-to-br from-secondary to-secondary/90 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -283,91 +283,123 @@
                 <p class="text-xl text-gray-300">Estamos listos para ayudarte a hacer crecer tu negocio</p>
             </div>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="text-2xl font-bold mb-8">Información de Contacto</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-center">
-                            <div class="bg-accent p-3 rounded-lg mr-4">
-                                <i class="fas fa-phone text-white"></i>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-8">Información de Contacto</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="bg-accent p-3 rounded-lg mr-4">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Teléfono</div>
+                                    <div class="text-gray-300">809-906-0344</div>
+                                </div>
                             </div>
-                            <div>
-                                <div class="font-semibold">Teléfono</div>
-                                <div class="text-gray-300">809-906-0344</div>
+                            <div class="flex items-center">
+                                <div class="bg-accent p-3 rounded-lg mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Email</div>
+                                    <div class="text-gray-300">info@niferadev.com</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-accent p-3 rounded-lg mr-4">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Ubicación</div>
+                                    <div class="text-gray-300">República Dominicana</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex items-center">
-                            <div class="bg-accent p-3 rounded-lg mr-4">
-                                <i class="fas fa-envelope text-white"></i>
-                            </div>
-                            <div>
-                                <div class="font-semibold">Email</div>
-                                <div class="text-gray-300">info@niferadev.com</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="bg-accent p-3 rounded-lg mr-4">
-                                <i class="fas fa-map-marker-alt text-white"></i>
-                            </div>
-                            <div>
-                                <div class="font-semibold">Ubicación</div>
-                                <div class="text-gray-300">República Dominicana</div>
+                        
+                        <!-- Social Media -->
+                        <div class="mt-8">
+                            <h4 class="text-lg font-semibold mb-4">Síguenos en Redes Sociales</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-accent hover:bg-accent/80 p-3 rounded-lg transition-colors">
+                                    <i class="fab fa-instagram text-white text-xl"></i>
+                                </a>
+                                <a href="#" class="bg-accent hover:bg-accent/80 p-3 rounded-lg transition-colors">
+                                    <i class="fab fa-whatsapp text-white text-xl"></i>
+                                </a>
+                                <a href="#" class="bg-accent hover:bg-accent/80 p-3 rounded-lg transition-colors">
+                                    <i class="fab fa-linkedin text-white text-xl"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Social Media -->
-                    <div class="mt-8">
-                        <h4 class="text-lg font-semibold mb-4">Síguenos en Redes Sociales</h4>
-                        <div class="flex space-x-4">
-                            <a href="https://www.instagram.com/niferatics/" class="bg-accent hover:bg-accent/80 p-3 rounded-lg transition-colors">
-                                <i class="fab fa-instagram text-white text-xl"></i>
-                            </a>
-                            <a href="wa.link/0oqn38" class="bg-accent hover:bg-accent/80 p-3 rounded-lg transition-colors">
-                                <i class="fab fa-whatsapp text-white text-xl"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/niferadev/about/?viewAsMember=true" class="bg-accent hover:bg-accent/80 p-3 rounded-lg transition-colors">
-                                <i class="fab fa-linkedin text-white text-xl"></i>
-                            </a>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-8">Horarios de Atención</h3>
+                        <div class="space-y-4 mb-8">
+                            <div class="flex justify-between items-center py-2 border-b border-white/20">
+                                <span class="font-medium">Lunes - Viernes</span>
+                                <span class="text-gray-300">8:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-white/20">
+                                <span class="font-medium">Sábados</span>
+                                <span class="text-gray-300">9:00 AM - 2:00 PM</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-white/20">
+                                <span class="font-medium">Domingos</span>
+                                <span class="text-gray-300">Cerrado</span>
+                            </div>
+                        </div>
+                        
+                        <h4 class="text-xl font-bold mb-4">¿Por qué elegirnos?</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-accent mr-3"></i>
+                                <span class="text-gray-300">Respuesta rápida en menos de 24 horas</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-accent mr-3"></i>
+                                <span class="text-gray-300">Soporte técnico especializado</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-accent mr-3"></i>
+                                <span class="text-gray-300">Precios competitivos y transparentes</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-accent mr-3"></i>
+                                <span class="text-gray-300">Garantía en todos nuestros servicios</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div>
-                    <h3 class="text-2xl font-bold mb-8">Envíanos un Mensaje</h3>
-                    <form class="space-y-6">
+                <!-- FAQ section -->
+                <div class="bg-white/5 rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold mb-8 text-center">Preguntas Frecuentes</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
-                            <label for="name" class="block text-sm font-medium mb-2">Nombre Completo</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-white placeholder-gray-300" placeholder="Tu nombre completo">
+                            <h4 class="font-semibold mb-2">¿Ofrecen soporte remoto?</h4>
+                            <p class="text-gray-300 text-sm">Sí, brindamos soporte técnico remoto para resolver problemas de manera rápida y eficiente.</p>
                         </div>
                         <div>
-                            <label for="email" class="block text-sm font-medium mb-2">Email</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-white placeholder-gray-300" placeholder="tu@email.com">
+                            <h4 class="font-semibold mb-2">¿Cuánto tiempo toma desarrollar una web?</h4>
+                            <p class="text-gray-300 text-sm">Depende de la complejidad, pero generalmente entre 2-6 semanas para proyectos estándar.</p>
                         </div>
                         <div>
-                            <label for="service" class="block text-sm font-medium mb-2">Servicio de Interés</label>
-                            <select id="service" name="service" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-white">
-                                <option value="">Selecciona un servicio</option>
-                                <option value="redes-video">Redes Sociales & Video</option>
-                                <option value="soporte-tecnico">Soporte Técnico</option>
-                                <option value="desarrollo-web">Desarrollo Web</option>
-                                <option value="contabilidad">Contabilidad</option>
-                            </select>
+                            <h4 class="font-semibold mb-2">¿Manejan redes sociales de empresas?</h4>
+                            <p class="text-gray-300 text-sm">Sí, creamos contenido, gestionamos publicaciones y editamos videos para redes sociales.</p>
                         </div>
                         <div>
-                            <label for="message" class="block text-sm font-medium mb-2">Mensaje</label>
-                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-white placeholder-gray-300" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                            <h4 class="font-semibold mb-2">¿Ofrecen mantenimiento web?</h4>
+                            <p class="text-gray-300 text-sm">Sí, incluimos planes de mantenimiento para mantener tu sitio web actualizado y seguro.</p>
                         </div>
-                        <button type="submit" class="w-full bg-accent hover:bg-accent/90 text-white py-3 px-6 rounded-lg font-semibold transition-colors">
-                            Enviar Mensaje
-                        </button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+     Footer 
     <footer class="bg-secondary text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -402,15 +434,27 @@
                     </ul>
                 </div>
                 
+                <!-- Company info -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Suscríbete a las Últimas Noticias</h4>
-                    <p class="text-gray-300 mb-4">Mantente al día con nuestras novedades y consejos tecnológicos.</p>
-                    <form class="flex">
-                        <input type="email" placeholder="Tu email" class="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-accent text-white placeholder-gray-300">
-                        <button type="submit" class="bg-accent hover:bg-accent/90 px-6 py-2 rounded-r-lg transition-colors">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
+                    <h4 class="text-lg font-semibold mb-4">Información de la Empresa</h4>
+                    <div class="space-y-3 text-gray-300">
+                        <div class="flex items-center">
+                            <i class="fas fa-calendar-alt text-accent mr-3"></i>
+                            <span class="text-sm">Más de 6 años de experiencia</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-users text-accent mr-3"></i>
+                            <span class="text-sm">Equipo especializado</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-shield-alt text-accent mr-3"></i>
+                            <span class="text-sm">Servicios garantizados</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-accent mr-3"></i>
+                            <span class="text-sm">Soporte 24/7</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -420,14 +464,71 @@
         </div>
     </footer>
 
+     Notification Toast 
+    <div id="notification" class="fixed top-4 right-4 z-50 transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="bg-white rounded-lg shadow-lg border-l-4 p-4 max-w-sm">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <i id="notification-icon" class="text-2xl"></i>
+                </div>
+                <div class="ml-3">
+                    <p id="notification-message" class="text-sm font-medium text-gray-900"></p>
+                </div>
+                <div class="ml-auto pl-3">
+                    <button id="notification-close" class="text-gray-400 hover:text-gray-600">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        // Configuración de la API
+        const API_BASE_URL = 'http://localhost:3000/api';
+
+        // Función para mostrar notificaciones
+        function showNotification(message, type = 'success') {
+            const notification = document.getElementById('notification');
+            const icon = document.getElementById('notification-icon');
+            const messageEl = document.getElementById('notification-message');
+            const notificationDiv = notification.querySelector('div');
+
+            // Configurar el contenido
+            messageEl.textContent = message;
+
+            // Configurar el estilo según el tipo
+            if (type === 'success') {
+                icon.className = 'fas fa-check-circle text-green-500 text-2xl';
+                notificationDiv.className = 'bg-white rounded-lg shadow-lg border-l-4 border-green-500 p-4 max-w-sm';
+            } else if (type === 'error') {
+                icon.className = 'fas fa-exclamation-circle text-red-500 text-2xl';
+                notificationDiv.className = 'bg-white rounded-lg shadow-lg border-l-4 border-red-500 p-4 max-w-sm';
+            }
+
+            // Mostrar la notificación
+            notification.classList.remove('translate-x-full');
+
+            // Ocultar automáticamente después de 5 segundos
+            setTimeout(() => {
+                notification.classList.add('translate-x-full');
+            }, 5000);
+        }
+
+        // Cerrar notificación manualmente
+        document.getElementById('notification-close').addEventListener('click', () => {
+            document.getElementById('notification').classList.add('translate-x-full');
         });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('[data-mobile-menu-button]');
+        const mobileMenu = document.querySelector('[data-mobile-menu]');
+        
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -445,16 +546,16 @@
             });
         });
 
-        // Form submission
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
-        });
-
-        // Newsletter subscription
-        document.querySelector('footer form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('¡Gracias por suscribirte! Recibirás nuestras últimas noticias.');
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-white/95', 'backdrop-blur-sm', 'shadow-lg');
+                header.classList.remove('bg-transparent');
+            } else {
+                header.classList.remove('bg-white/95', 'backdrop-blur-sm', 'shadow-lg');
+                header.classList.add('bg-transparent');
+            }
         });
     </script>
 </body>
